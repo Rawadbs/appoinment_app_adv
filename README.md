@@ -2,7 +2,32 @@
 
 A new Flutter project.
 
-## Getting Started
+## 🎨 System design
+
+-lib
+-lib-core
+-lib-core-di
+-lib-core-networking
+-lib-core-routing
+-lib-core-helpers
+-lib-core-theme
+-lib-core-widgets
+
+-lib-Feature-home
+-lib-Feature-home-data
+-lib-Feature-home-data-models
+-lib-Feature-home-data-repository
+
+-lib-Feature-home-
+-lib-Feature-home-logic
+-lib-Feature-home-logic-cubit
+-lib-Feature-home-logic-state
+
+-lib-Feature-home-
+-lib-Feature-home-ui-screens
+-lib-Feature-home-ui-widgets
+
+
 
 This project is a starting point for a Flutter application.
 
