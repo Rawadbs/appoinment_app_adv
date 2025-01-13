@@ -1,21 +1,8 @@
-import 'package:appoinment_app_adv/core/features/home/ui/screen/home_screen.dart';
+import 'package:appoinment_app_adv/core/routing/app_router.dart';
+import 'package:appoinment_app_adv/doc_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( DocApp(appRouter: AppRouter(),));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
-    );
-  }
-}
