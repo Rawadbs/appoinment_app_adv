@@ -1,3 +1,5 @@
+import 'package:appoinment_app_adv/core/helpers/extensions.dart';
+import 'package:appoinment_app_adv/core/routing/routes.dart';
 import 'package:appoinment_app_adv/core/theme/colors.dart';
 import 'package:appoinment_app_adv/core/theme/styles.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +10,9 @@ class GetStartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        context.pushNamed(Routes.loginScreen);
+      },
       style: ButtonStyle(
           backgroundColor: const WidgetStatePropertyAll(ColorsManger.primary),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -20,7 +24,7 @@ class GetStartedButton extends StatelessWidget {
           ))),
       child: Text(
         'Get Started',
-        style: TextStyles.font16white500Weight,
+        style: TextStyles.font16WhiteMedium,
       ),
     );
   }
