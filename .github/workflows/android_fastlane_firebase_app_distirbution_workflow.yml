@@ -18,11 +18,11 @@ jobs:
         java-version: '8'
         distrbution:  'temurin'
 
-    -name: Install Flutter
-     uses: subosito/flutter-action@v2
-     with:
+    - name: Install Flutter
+      uses: subosito/flutter-action@v2
+      with:
        channel: stable
-       
+
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
