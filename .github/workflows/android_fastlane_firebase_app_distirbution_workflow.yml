@@ -3,7 +3,7 @@ name: Android Fastlane with firebase App Distrbution Workflow
 on:
   push:
     branches:
-      -master
+      - master
 
 jobs:
   distrbute_to_firebase:
@@ -31,4 +31,3 @@ jobs:
       run: |
         bundle exec fastlane android firebase_distribution
       working-directory: android
-        
