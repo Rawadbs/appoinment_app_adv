@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1019265227983",
+    "project_id": "test-project-1e68e",
+    "storage_bucket": "test-project-1e68e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019265227983:android:a99e41a935b3cf5dc06bba",
+        "android_client_info": {
+          "package_name": "com.appoinment_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoEbkjZNI08XmYw_aZpb96TLb29AoXNS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
