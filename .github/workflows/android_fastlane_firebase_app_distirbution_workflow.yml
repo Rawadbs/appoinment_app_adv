@@ -19,7 +19,7 @@ jobs:
         distrbution:  'temurin'
 
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.4.1'
         bundler-cashe: true
