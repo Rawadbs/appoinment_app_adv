@@ -15,13 +15,13 @@ jobs:
     - name: Set Up JDK 8
       uses: actions/setup-java@v2
       with:
-        java-version: '8'
+        java-version: '11'
         distribution:  'temurin'
 
     - name: Install Flutter
       uses: subosito/flutter-action@v2
       with:
-      flutter-version: '3.24.1'
+       flutter-version: '3.24.1'
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
