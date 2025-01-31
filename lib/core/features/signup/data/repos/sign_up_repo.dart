@@ -6,7 +6,9 @@ import 'package:appoinment_app_adv/core/networking/api_service.dart';
 
 class SignupRepo {
   final ApiService _apiService;
+
   SignupRepo(this._apiService);
+  
   Future<ApiResult<SignupResponse>> signup(
       SignupRequestBody signupRequestBody) async {
     try {

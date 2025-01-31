@@ -2,6 +2,7 @@ import 'package:appoinment_app_adv/core/features/login/logic/cubit/login_cubit.d
 import 'package:appoinment_app_adv/core/features/login/ui/widgets/dont_have_account.dart';
 import 'package:appoinment_app_adv/core/features/login/ui/widgets/email_and_password.dart';
 import 'package:appoinment_app_adv/core/features/login/ui/widgets/login_bloc_listener.dart';
+import 'package:appoinment_app_adv/core/features/login/ui/widgets/push_home.dart';
 import 'package:appoinment_app_adv/core/features/login/ui/widgets/terms_and_condtion.dart';
 import 'package:appoinment_app_adv/core/helpers/spacing.dart';
 import 'package:appoinment_app_adv/core/theme/styles.dart';
@@ -54,6 +55,8 @@ class LoginScreen extends StatelessWidget {
                   const TermsAndConditionsText(),
                   verticalSpace(60),
                   const DontHaveAccountText(),
+                  verticalSpace(16),
+                  const PushHome(),
                   const LoginBlocListener()
                 ],
               )
