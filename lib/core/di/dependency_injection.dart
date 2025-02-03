@@ -1,3 +1,6 @@
+import 'package:appoinment_app_adv/core/features/home/data/apis/home_api_service.dart';
+import 'package:appoinment_app_adv/core/features/home/data/repos/home_repo.dart';
+import 'package:appoinment_app_adv/core/features/home/logic/home_cubit.dart';
 import 'package:appoinment_app_adv/core/features/login/data/repos/login_repo.dart';
 import 'package:appoinment_app_adv/core/features/login/logic/cubit/login_cubit.dart';
 import 'package:appoinment_app_adv/core/features/signup/data/repos/sign_up_repo.dart';
@@ -20,4 +23,8 @@ Future<void> setupGetIt() async {
   // register
   getIt.registerLazySingleton<SignupRepo>(() => SignupRepo(getIt()));
   getIt.registerFactory<SignupCubit>(() => SignupCubit(getIt()));
+
+  //home
+    getIt.registerLazySingleton<HomeApiService>(() => HomeApiService(dio));
+  getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
 }
