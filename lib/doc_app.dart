@@ -1,4 +1,5 @@
 import 'package:appoinment_app_adv/core/features/onboarding/onbarding_screen.dart';
+import 'package:appoinment_app_adv/core/helpers/constants.dart';
 import 'package:appoinment_app_adv/core/routing/app_router.dart';
 import 'package:appoinment_app_adv/core/routing/routes.dart';
 import 'package:appoinment_app_adv/core/theme/colors.dart';
@@ -19,9 +20,9 @@ class DocApp extends StatelessWidget {
             useMaterial3: true,
             primaryColor: ColorsManger.primary,
             scaffoldBackgroundColor: Colors.white),
-        initialRoute: Routes.onBoardingScreen,
+        initialRoute:
+            isLoggedinUser ? Routes.homeScreen : Routes.onBoardingScreen,
         debugShowCheckedModeBanner: false,
-        home: const OnbardingScreen(),
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
