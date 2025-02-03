@@ -5,18 +5,19 @@ class ApiConstants {
 }
 
 class ApiErrors {
-  static const String badrequesterror = "bad request. try again later";
-  static const String forbiddenerror = "forbidden request. try again later";
-  static const String unauthorizederror = "user unauthorized, try again later";
-  static const String notfounderror = "url not found, try again later";
-  static const String conflicterror = "conflict found, try again later";
-  static const String internalservererror =
-      "some thing went wrong, try again later";
-  static const String unknownerror = "some thing went wrong, try again later";
-  static const String timeouterror = "time out, try again late";
-  static const String defaulterror = "some thing went wrong, try again later";
-  static const String cacheerror = "cache error, try again later";
-  static const String nointerneterror = "Please check your internet connection";
-  static const String nocontent = "success with not content";
-  static const String succsess = "success";
+  static const String badRequestError = "badRequestError";
+  static const String noContent = "noContent";
+  static const String forbiddenError = "forbiddenError";
+  static const String unauthorizedError = "unauthorizedError";
+  static const String notFoundError = "notFoundError";
+  static const String conflictError = "conflictError";
+  static const String internalServerError = "internalServerError";
+  static const String unknownError = "unknownError";
+  static const String timeoutError = "timeoutError";
+  static const String defaultError = "defaultError";
+  static const String cacheError = "cacheError";
+  static const String noInternetError = "noInternetError";
+  static const String loadingMessage = "loading_message";
+  static const String retryAgainMessage = "retry_again_message";
+  static const String ok = "Ok";
 }
